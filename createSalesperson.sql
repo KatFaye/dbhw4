@@ -5,7 +5,7 @@ CREATE TABLE salesperson (
   office varchar(30) DEFAULT NULL,
   comm number(3) DEFAULT NULL,
   PRIMARY KEY (salpers_id),
-  CONSTRAnumber manager_id
+  CONSTRAINT manager_id
     FOREIGN KEY (manager_id)
     REFERENCES salesperson(salpers_id)
 );

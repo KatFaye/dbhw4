@@ -5,7 +5,7 @@ CREATE TABLE product (
   cost decimal(5,2) DEFAULT NULL,
   price decimal(5,2) DEFAULT NULL,
   PRIMARY KEY (prod_id)
-  CONSTRAnumber manufactr_id
+  CONSTRAINT manufactr_id
     FOREIGN KEY (manufactr_id)
     REFERENCES manufacturer(manufactr_id)
 
