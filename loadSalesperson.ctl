@@ -4,7 +4,7 @@ INTO TABLE salesperson
 APPEND
 FIELDS TERMINATED BY ','
 (salpers_id,
- salepers_name,
+ salpers_name,
  manager_id,
  office,
  comm
