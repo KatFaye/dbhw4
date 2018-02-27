@@ -1,5 +1,5 @@
 CREATE TABLE manufacturer (
-  manufactr_id int(4) NOT NULL,
+  manufactr_id number(4) NOT NULL,
   manufactr_name varchar(50) DEFAULT NULL,
   city varchar(30) DEFAULT NULL,
   country varchar(30) DEFAULT NULL,
