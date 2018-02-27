@@ -14,5 +14,5 @@ CREATE TABLE sale (
     REFERENCES salesperson(salpers_id),
   CONSTRAINT prod_id
     FOREIGN KEY (prod_id)
-    REFERENCES product(prod_id),
+    REFERENCES product(prod_id)
 );
