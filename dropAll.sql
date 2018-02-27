@@ -1,5 +1,29 @@
-drop table if exists customer;
-drop table if exists manufacturer;
-drop table if exists product;
-drop table if exists sale;
-drop table if exists salesperson;
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE sale';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE customer';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE product';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE salesperson';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;
+
+BEGIN
+    EXECUTE IMMEDIATE 'DROP TABLE manufacturer';
+EXCEPTION
+    WHEN OTHERS THEN NULL;
+END;

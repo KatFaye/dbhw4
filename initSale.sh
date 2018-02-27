@@ -11,6 +11,6 @@ for s in create*.sql; do
   cmd=${s%.sql}
   sqlplus kherring/msa2012 @$cmd << HERE
   exit
-  HERE
+HERE
 
 done
