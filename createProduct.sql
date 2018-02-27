@@ -4,9 +4,9 @@ CREATE TABLE product (
   manufactr_id number(4) DEFAULT NULL,
   cost decimal(5,2) DEFAULT NULL,
   price decimal(5,2) DEFAULT NULL,
-  PRIMARY KEY ('prod_id')
+  PRIMARY KEY (prod_id)
   CONSTRAnumber manufactr_id
     FOREIGN KEY (manufactr_id)
     REFERENCES manufacturer(manufactr_id)
 
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);

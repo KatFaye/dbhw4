@@ -5,7 +5,7 @@ CREATE TABLE sale (
   salpers_id number(3) DEFAULT NULL,
   prod_id number(5) DEFAULT NULL,
   qty number(3) DEFAULT NULL,
-  PRIMARY KEY ('sale_id'),
+  PRIMARY KEY (sale_id),
   CONSTRAnumber cust_id
     FOREIGN KEY (cust_id)
     REFERENCES customer(cust_id),
@@ -15,4 +15,4 @@ CREATE TABLE sale (
   CONSTRAnumber prod_id
     FOREIGN KEY (prod_id)
     REFERENCES product(prod_id),
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);

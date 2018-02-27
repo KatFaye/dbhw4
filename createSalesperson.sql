@@ -4,8 +4,8 @@ CREATE TABLE salesperson (
   manager_id number(3) DEFAULT NULL,
   office varchar(30) DEFAULT NULL,
   comm number(3) DEFAULT NULL,
-  PRIMARY KEY ('salpers_id'),
+  PRIMARY KEY (salpers_id),
   CONSTRAnumber manager_id
     FOREIGN KEY (manager_id)
     REFERENCES salesperson(salpers_id)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+);

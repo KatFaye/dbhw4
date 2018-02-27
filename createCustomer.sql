@@ -5,5 +5,5 @@ CREATE TABLE customer (
   country varchar(30) DEFAULT NULL,
   beg_bal number(11) DEFAULT NULL,
   cur_bal number(11) DEFAULT NULL,
-  PRIMARY KEY ('cust_id')
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (cust_id)
+);
