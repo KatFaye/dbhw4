@@ -5,6 +5,6 @@ CREATE TABLE zips (
   CONSTRAINT pk
     PRIMARY KEY (zipcode, state_abbrv),
   CONSTRAINT state_abbrv
-    FOREIGN KEY state_abbrv
+    FOREIGN KEY (state_abbrv)
     REFERENCES states(st_code)
 );
