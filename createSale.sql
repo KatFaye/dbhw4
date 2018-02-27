@@ -1,6 +1,6 @@
 CREATE TABLE sale (
   sale_id number(3) NOT NULL,
-  date varchar(6) DEFAULT NULL,
+  sdate varchar(6) DEFAULT NULL,
   cust_id number(4) DEFAULT NULL,
   salpers_id number(3) DEFAULT NULL,
   prod_id number(5) DEFAULT NULL,
