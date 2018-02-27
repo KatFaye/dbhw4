@@ -1,30 +1,5 @@
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE sale';
-EXCEPTION
-    WHEN OTHERS THEN NULL;
-END;
-/
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE customer';
-EXCEPTION
-    WHEN OTHERS THEN NULL;
-END;
-/
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE product';
-EXCEPTION
-    WHEN OTHERS THEN NULL;
-END;
-/
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE salesperson';
-EXCEPTION
-    WHEN OTHERS THEN NULL;
-END;
-/
-BEGIN
-    EXECUTE IMMEDIATE 'DROP TABLE manufacturer';
-EXCEPTION
-    WHEN OTHERS THEN NULL;
-END;
-/
+drop table customer;
+drop table manufacturer;
+drop table product;
+drop table sale;
+drop table salesperson;
