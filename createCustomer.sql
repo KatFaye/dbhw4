@@ -1,4 +1,4 @@
-CREATE TABLE 'customer' (
+CREATE TABLE customer (
   'cust_id' int(4) NOT NULL,
   'cust_name' varchar(50) DEFAULT NULL,
   'city' varchar(50) DEFAULT NULL,
