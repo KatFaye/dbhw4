@@ -8,5 +8,4 @@ CREATE TABLE product (
   CONSTRAINT manufactr_id
     FOREIGN KEY (manufactr_id)
     REFERENCES manufacturer(manufactr_id)
-
 );

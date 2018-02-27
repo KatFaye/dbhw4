@@ -2,10 +2,10 @@
 
 # ssh kherring
 
+tables=(customer manufacturer product salesperson sale)
 shopt -s nullglob
-for s in create*.sql; do
-  cmd=${s%.sql}
-  sqlplus kherring/msa2012 @$cmd << HERE
+for s in tables; do
+  sqlplus kherring/msa2012 @$s << HERE
   exit
 HERE
 
