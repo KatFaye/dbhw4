@@ -13,5 +13,5 @@ done
 
 for s in ${tables[@]}; do
   # echo $s
-  sqlldr kherring/msa2012 control=@load$s.ctl log=$s.log
+  sqlldr kherring/msa2012 control=load$s.ctl log=$s.log
 done
